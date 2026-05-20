@@ -9,7 +9,7 @@ st.set_page_config(
     layout="centered"
 )
 
-# Estilização visual romântica corrigida e com textos forçados para preto
+# Estilização visual romântica corrigida (Contador e Momentos em preto)
 st.html("""
     <style>
     .stApp { background-color: #fff5f5; }
@@ -20,6 +20,13 @@ st.html("""
         color: #000000 !important;
     }
     
+    /* Forçar a cor preta no título dos 12 momentos (Expander) */
+    .stExpander details summary p {
+        color: #000000 !important;
+        font-weight: bold !important;
+    }
+    
+    /* Ajustar o fundo do botão principal */
     .stButton>button {
         background-color: #d6336c !important; color: white !important; border-radius: 20px !important;
         border: none !important; padding: 12px 25px !important; width: 100% !important; font-size: 18px !important; font-weight: bold !important;
@@ -77,4 +84,4 @@ st.write("---")
 st.html("<h3 style='text-align: center;'>💌 Tenho um último recado...</h3>")
 if st.button("Clique para abrir a surpresa final"):
     st.balloons() # Faz voar balões na tela
-    st.success("Eu te amo daqui até a Lua! 🌙 Eu vc nino e pix SEMPRE!! Obrigado por esses 12 momentos e por todos os outros que ainda vamos viver. Nosso futuro vai ser lindo! ❤️")
+    st.success("Eu te amo daqui até a Lua! 🌙 EU VC NINO E PIX SEMPRE!! Obrigado por esses 12 momentos e por todos os outros que ainda vamos viver. Nosso futuro vai ser lindo! ❤️")

@@ -29,9 +29,9 @@ st.write("---")
 # ⏳ Contador de Tempo Ajustado: 17/08/2024
 data_inicio = datetime(2024, 8, 17, 20, 0) 
 agora = datetime.now()
-diferenca = agora - data_inicio
+diferenca = ago_diff = agora - data_inicio
 
-st.write("<h3 style='text-align: center;'>⏳ Tempo ao seu lado:</h3>", unsafe_with_html=True)
+st.html("<h3 style='text-align: center;'>⏳ Tempo ao seu lado:</h3>")
 col1, col2, col3 = st.columns(3)
 col1.metric("Dias", f"{diferenca.days}")
 col2.metric("Horas", f"{diferenca.seconds // 3600}")
@@ -42,11 +42,10 @@ st.write("---")
 st.write("## 📌 Nossos 12 Momentos Inesquecíveis")
 st.html("<p style='text-align: center; color: #666; font-size: 14px;'>Clique nos momentos abaixo para abrir cada lembrança...</p>")
 
-# Função para criar os blocos de fotos (Agora protegida contra fotos ausentes)
+# Função para criar os blocos de fotos (Protegida contra fotos ausentes)
 def criar_momento(numero, titulo, texto, nome_foto):
     with st.expander(f"✨ Momento {numero}: {titulo}"):
         st.html(f"<p style='font-size: 15px; color: #333; margin-bottom: 15px;'>{texto}</p>")
-        # Verifica se o arquivo da foto realmente existe antes de tentar mostrar
         if os.path.exists(nome_foto):
             st.image(nome_foto, use_column_width=True)
         else:
@@ -59,7 +58,7 @@ criar_momento("03", "Nossa Primeira Foto Juntos", "Olha a nossa cara de bobos ap
 criar_momento("04", "Aquele Jantar Especial", "Comida boa, mas a sua companhia foi o prato principal.", "foto4.jpg")
 criar_momento("05", "Nossa Primeira Viagem", "O perrengue valeu a pena só para ver esse seu sorriso de perto.", "foto5.jpg")
 criar_momento("06", "Um Domingo Qualquer", "Até os dias mais simples e preguiçosos ficam perfeitos com você.", "foto6.jpg")
-criar_momento("07", "Dia de Festa/Comemoração", "Celebrando a vida e as conquests sempre um ao lado do outro.", "foto7.jpg")
+criar_momento("07", "Dia de Festa/Comemoração", "Celebrando a vida e as conquistas sempre um ao lado do outro.", "foto7.jpg")
 criar_momento("08", "Aquele Rolê Aleatório", "Quem diria que a gente ia se divertir tanto fazendo absolutamente nada?", "foto8.jpg")
 criar_momento("09", "Superando Desafios", "Obrigado por segurar a minha mão nos momentos difíceis. Somos um time.", "foto9.jpg")
 criar_momento("10", "Nossos Aniversários", "Comemorar mais um ano de vida ao seu lado é o meu maior presente.", "foto10.jpg")
@@ -69,7 +68,7 @@ criar_momento("12", "Onde Estamos Hoje", "Doze momentos aqui guardados, e uma vi
 st.write("---")
 
 # 🎉 Surpresa Final
-st.write("<h3 style='text-align: center;'>💌 Tenho um último recado...</h3>", unsafe_with_html=True)
+st.html("<h3 style='text-align: center;'>💌 Tenho um último recado...</h3>")
 if st.button("Clique para abrir a surpresa final"):
     st.balloons() # Faz voar balões na tela
-    st.success("Eu te amo daqui até a Lua! 🌙 Eu vc Nino e pix SEMPRE! Obrigado por esses 12 momentos e por todos os outros que ainda vamos viver. Nosso futuro vai ser lindo! ❤️")
+    st.success("Eu te amo daqui até a Lua! 🌙 Obrigado por esses 12 momentos e por todos os outros que ainda vamos viver. Nosso futuro vai ser lindo! ❤️")

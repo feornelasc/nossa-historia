@@ -9,11 +9,17 @@ st.set_page_config(
     layout="centered"
 )
 
-# Estilização visual romântica corrigida
+# Estilização visual romântica corrigida e com textos forçados para preto
 st.html("""
     <style>
     .stApp { background-color: #fff5f5; }
     h1, h2, h3 { color: #d6336c !important; font-family: 'Helvetica Neue', sans-serif; text-align: center; }
+    
+    /* Forçar a cor preta nos textos do contador de tempo */
+    [data-testid="stMetricValue"], [data-testid="stMetricLabel"] {
+        color: #000000 !important;
+    }
+    
     .stButton>button {
         background-color: #d6336c !important; color: white !important; border-radius: 20px !important;
         border: none !important; padding: 12px 25px !important; width: 100% !important; font-size: 18px !important; font-weight: bold !important;
@@ -29,7 +35,7 @@ st.write("---")
 # ⏳ Contador de Tempo Ajustado: 17/08/2024
 data_inicio = datetime(2024, 8, 17, 20, 0) 
 agora = datetime.now()
-diferenca = ago_diff = agora - data_inicio
+diferenca = agora - data_inicio
 
 st.html("<h3 style='text-align: center;'>⏳ Tempo ao seu lado:</h3>")
 col1, col2, col3 = st.columns(3)
@@ -71,4 +77,4 @@ st.write("---")
 st.html("<h3 style='text-align: center;'>💌 Tenho um último recado...</h3>")
 if st.button("Clique para abrir a surpresa final"):
     st.balloons() # Faz voar balões na tela
-    st.success("Eu te amo daqui até a Lua! 🌙 Obrigado por esses 12 momentos e por todos os outros que ainda vamos viver. Nosso futuro vai ser lindo! ❤️")
+    st.success("Eu te amo daqui até a Lua! 🌙 Eu vc nino e pix SEMPRE!! Obrigado por esses 12 momentos e por todos os outros que ainda vamos viver. Nosso futuro vai ser lindo! ❤️")

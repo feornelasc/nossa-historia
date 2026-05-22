@@ -58,7 +58,7 @@ st.html("""
 """)
 
 # Cabeçalho Principal
-st.title("Feliz Dia dos Namorados! 🌹")
+st.title("Feliz Dia dos Namorados MOZI! 🌹")
 st.html("<p style='text-align: center; font-size: 16px; color: #555;'>Um cantinho especial para lembrar de cada pedacinho da nossa caminhada juntos...</p>")
 st.write("---")
 
@@ -75,7 +75,7 @@ col3.metric("Minutos", f"{(diferenca.seconds % 3600) // 60}")
 st.write("---")
 
 # 📌 Seção das Memórias
-st.write("## 📌 Nossos 12 Momentos Inesquecíveis")
+st.write("## 📌 Alguns dos nosso momentos de farra")
 st.html("<p style='text-align: center; color: #666; font-size: 14px;'>Clique nos momentos abaixo para abrir cada lembrança...</p>")
 
 # Função para criar os blocos de fotos (Protegida contra fotos ausentes)
@@ -89,7 +89,7 @@ def criar_momento(numero, titulo, texto, nome_foto):
 
 # --- SEUS 12 MOMENTOS ---
 criar_momento("01", "PIX", "Dia que tivemos o nosso primeiro filho, ele era tão picutuchoo.", "foto1.jpg")
-criar_momento("02", "Natal", "Agente sempre estiloso mas esse seu chinelo é muito feio ainda bem que vc não usa mais.", "foto2.jpg")
+criar_momento("02", "Natal", "A gente sempre estiloso mas esse seu chinelo é muito feio, ainda bem que vc não usa mais.", "foto2.jpg")
 criar_momento("03", "Nossa Comecinho", "Olha a nossa cara de bobos apaixonados logo no início!", "foto3.jpg")
 criar_momento("04", "Aquele Jantar Especial", "Comida boa, mas a sua companhia foi o prato principal.", "foto4.jpg")
 criar_momento("05", "Nossa Primeira Viagem", "O perrengue valeu a pena só para ver esse seu sorriso de perto.", "foto5.jpg")
@@ -107,4 +107,4 @@ st.write("---")
 st.html("<h3 style='text-align: center;'>💌 Tenho um último recado...</h3>")
 if st.button("Clique para abrir a surpresa final"):
     st.balloons() # Faz voar balões na tela
-    st.success("Eu te amo daqui até a Lua! 🌙 EU VC NINO E PIX SEMPRE!!! Obrigado por esses 12 momentos e por todos os outros que ainda vamos viver. Nosso futuro vai ser lindo! ❤️")
+    st.success("Eu te amo daqui até a Lua! 🌙 EU VC NINO E PIX SEMPRE!!! Obrigado tudo e por todos os momentos que vivemos e ainda vamos viver. Nosso futuro vai ser lindo! ❤️")

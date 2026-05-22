@@ -87,19 +87,17 @@ def criar_momento(numero, titulo, texto, nome_foto):
         else:
             st.info(f"📸 (A foto '{nome_foto}' aparecerá aqui assim que você adicioná-la no GitHub)")
 
-# --- SEUS 12 MOMENTOS ---
+# --- SEUS 10 MOMENTOS ---
 criar_momento("01", "PIX", "Dia que tivemos o nosso primeiro filho, ele era tão picutuchoo.", "foto1.jpg")
 criar_momento("02", "Natal", "A gente sempre estiloso mas esse seu chinelo é muito feio, ainda bem que vc não usa mais.", "foto2.jpg")
 criar_momento("03", "Nossa Comecinho", "Olha a nossa cara de bobos apaixonados logo no início!", "foto3.jpg")
-criar_momento("04", "Aquele Jantar Especial", "Comida boa, mas a sua companhia foi o prato principal.", "foto4.jpg")
-criar_momento("05", "Nossa Primeira Viagem", "O perrengue valeu a pena só para ver esse seu sorriso de perto.", "foto5.jpg")
-criar_momento("06", "Um Domingo Qualquer", "Até os dias mais simples e preguiçosos ficam perfeitos com você.", "foto6.jpg")
-criar_momento("07", "Dia de Festa/Comemoração", "Celebrando a vida e as conquistas sempre um ao lado do outro.", "foto7.jpg")
-criar_momento("08", "Aquele Rolê Aleatório", "Quem diria que a gente ia se divertir tanto fazendo absolutamente nada?", "foto8.jpg")
-criar_momento("09", "Superando Desafios", "Obrigado por segurar a minha mão nos momentos difíceis. Somos um time.", "foto9.jpg")
-criar_momento("10", "Nossos Aniversários", "Comemorar mais um ano de vida ao seu lado é o meu maior presente.", "foto10.jpg")
-criar_momento("11", "Momento Carinho", "Um registro do seu abraço, que é o meu lugar favorito no mundo.", "foto11.jpg")
-criar_momento("12", "Onde Estamos Hoje", "Doze momentos aqui guardados, e uma vida inteira pela frente para construir juntos.", "foto12.jpg")
+criar_momento("04", "Nininho", "Nossa familinha crescendo.", "foto6.jpg")
+criar_momento("05", "Nossa Primeira Viagem", "Melhor coisa foi ter conhecido esse marzão com vc.", "foto4.jpg")
+criar_momento("06", "NÓS LINDOS ", "Te amo Mozi.", "foto5.jpg")
+criar_momento("07", "Grudadinhos", "Espero que seja sempre assim.", "foto7.jpg")
+criar_momento("08", "Som na caixa", "Um dos roles mais daora e aleatório", "foto8.jpg")
+criar_momento("09", "Outback", "Antes vc não gostava de cebola agorar vc rouba todas as minhas", "foto9.jpg")
+criar_momento("10", "Te amo", "Que nosso amor prevaleça e seja lindo antes de tudo", "foto10.jpg")
 
 st.write("---")
 
